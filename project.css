@@ -1,0 +1,26 @@
+div{
+    background-color: rgba(142, 194, 194, 0.575);
+    border-radius: 25px;
+
+    width:400px;
+    heigh: 270px;
+    padding:30px;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top: -135px;
+    margin-left:-200px;
+
+    text-align: center;
+}
+
+h1{
+    color:white;
+    text-shadow: rgb(47, 135, 151) 0px 0 10px;
+}
+
+p{
+    color:white;
+    text-shadow: rgb(47, 135, 151) 0px 0 10px;
+}
