@@ -19,27 +19,35 @@ function hantei() {
   let yoso = 4;
   kaisu = kaisu +1
 
+  let s1 = document.querySelector('span#kaisu');
+  s1.textContent = kaisu;
+  let a1 = document.querySelector('span#answer');
+  a1.textContent = yoso;
+
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
-if(kaisu < 3){
-    if(kotae === yoso){
-        console.log('正解です．おめでとう!')
-    }else if(kotae > yoso){
-        console.log('まちがい．答えはもっと大きいですよ')
-    }else if(kotae < yoso){
-        console.log('まちがい．答えはもっと小さいですよ')
-    }
-}else if(kaisu === 3){
-    if(kotae === yoso){
-        console.log('正解です．おめでとう!')
-        kaisu = kaisu +3
+
+  let r1 = document.querySelector('p#result');
+
+    if(kaisu < 3){
+        if(kotae === yoso){
+            r1.textContent='正解です．おめでとう!';
+        }else if(kotae > yoso){
+            r1.textContent='まちがい．答えはもっと大きいですよ';
+        }else if(kotae < yoso){
+            r1.textContent='まちがい．答えはもっと小さいですよ';
+        }
+    }else if(kaisu === 3){
+        if(kotae === yoso){
+            r1.textContent='正解です．おめでとう!';
+            kaisu = kaisu +3
+        }else{
+            r1.textContent='まちがい．残念でした答えは'+ kotae+'です．';
+        }
     }else{
-        console.log('まちがい．残念でした答えは',kotae,'です．')
+        r1.textContent='答えは'+ kotae +'でした.すでにゲームは終わっています';
     }
-}else{
-        console.log('答えは',kotae,'でした.すでにゲームは終わっています')
-}
 
 }
 
