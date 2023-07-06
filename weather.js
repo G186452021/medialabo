@@ -51,10 +51,10 @@ let b = document.querySelector('#print');
 b.addEventListener('click', greeting);
 
 function greeting() {
-	let i = document.querySelector('input[name="toshi"]');
+	let i = document.querySelector('input[name="toshiid"]');
 	let toshiid = i.value;
 	console.log(toshiid);
-}
+
 
 console.log(data.name);
 console.log(data.weather[0].description);
@@ -64,16 +64,17 @@ console.log(data.main.temp_min);
 
 let div = document.querySelector('div#result');
 
-let h1 = document.createElement('h1'); 
+let h1 = document.querySelector('h1'); 
 h1.textContent = data.name; 
-div.insertAdjacentElement('afterbegin',h1); 
+
+let weather = document.querySelector('span#weather');
+weather.textContent =data.weather[0].description;
 
 let spanmax = document.querySelector('span#max');
-max.textContent = data.main.temp_max; 
+spanmax.textContent = "最高気温 " + data.main.temp_max; 
 
 let spanmin = document.querySelector('span#min');
-min.textContent = data.main.temp_min;
+spanmin.textContent = "最低気温 " + data.main.temp_min;
 
-let p1 = document.createElement('p'); 
-p1.textContent = data.weather[0].description; 
-div.insertAdjacentElement('beforeend',p1);
+
+}
