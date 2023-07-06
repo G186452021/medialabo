@@ -47,6 +47,15 @@ let data = {
 
 ////////// 課題3-2 ここからプログラムを書こう
 
+let b = document.querySelector('#print');
+b.addEventListener('click', greeting);
+
+function greeting() {
+	let i = document.querySelector('input[name="toshi"]');
+	let toshiid = i.value;
+	console.log(toshiid);
+}
+
 console.log(data.name);
 console.log(data.weather[0].description);
 console.log(data.main.temp_max);

@@ -8,6 +8,24 @@
         <script src="weather.js"defer></script>
 </head>
     <body>
+        <label for="toshi">都市ID</label>
+        <input type="text" name="toshi" list="example" size="10">
+        <button id="print">検索</button>
+
+        <datalist id="example">
+            <option value="360630"></option>
+            <option value="524901"></option>
+            <option value="993800"></option>
+            <option value="1816670"></option>
+            <option value="1850147"></option>
+            <option value="1880252"></option>
+            <option value="2147714"></option>
+            <option value="2643743"></option>
+            <option value="2968815"></option>
+            <option value="3451189"></option>
+            <option value="5128581"></option>
+            <option value="5368361"></option>
+        </datalist>
 
         <div id = "result">
             <p>最高気温 <span id = max></span></p>
