@@ -1,13 +1,15 @@
 html{
-	
+	background-color: rgb(232, 240, 237);	
 }
 
 body{
 	margin:60px;
+	
 }
 
 h2{
-	background-color: #f5ff6c;
+	color:white;
+	background: linear-gradient(to right, rgb(255, 185, 93), rgba(255, 192, 203, 0));
 }
 
 div#zentai {
@@ -22,3 +24,12 @@ div#zentai > div {
 	padding: 25px;
 	
 	}
+
+
+div#block{
+	background-color: rgb(255, 254, 218);
+	padding:30px;
+	border-radius: 25px;
+	color: rgb(49, 32, 27);
+	
+}
