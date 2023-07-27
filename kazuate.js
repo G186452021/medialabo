@@ -30,15 +30,15 @@ function hantei() {
   let r1 = document.querySelector('p#result');
 
     if(kaisu < 3){
-        if(kotae === yoso){
+        if(kotae == yoso){
             r1.textContent='正解です．おめでとう!';
         }else if(kotae > yoso){
             r1.textContent='まちがい．答えはもっと大きいですよ';
         }else if(kotae < yoso){
             r1.textContent='まちがい．答えはもっと小さいですよ';
         }
-    }else if(kaisu === 3){
-        if(kotae === yoso){
+    }else if(kaisu == 3){
+        if(kotae == yoso){
             r1.textContent='正解です．おめでとう!';
             kaisu = kaisu +3
         }else{
